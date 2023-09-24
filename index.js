@@ -14,7 +14,9 @@ mongoose.connect(config.dbUri, { useNewUrlParser: true, useUnifiedTopology: true
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors(
+  
+));
 
 // Define API routes
 const authRoutes = require('./routes/auth');
